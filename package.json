@@ -1,5 +1,5 @@
 
 {
-  name: "pnpmfile-functions"
-  main: "./index.js"
+  "name": "pnpmfile-functions"
+  "main": "./index.js"
 }
