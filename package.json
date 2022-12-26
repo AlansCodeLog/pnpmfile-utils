@@ -1,0 +1,5 @@
+
+{
+  name: "pnpmfile-functions"
+  main: "./index.js"
+}
