@@ -8,14 +8,14 @@ function removeLinkedPackages(deps, names, versions) {
 	if (!deps) return
 	for (const dep in deps) {
 		if (names.includes(dep)) {
-			console.log(`Removed symlinked package ${dep}`)
+			console.log(`Forced pnpm to ignore symlinked package ${dep}`)
 			delete deps[dep]
 			return
 		}
 		let version = deps[dep]
 		if (["~", "^"].includes(version[0])) version = version.slice(1)
 		if (versions.includes(version)) {
-			console.log(`Removed symlinked package ${dep}`)
+			console.log(`Forced pnpm to ignored symlinked package ${dep}`)
 
 			delete deps[dep]
 		}
